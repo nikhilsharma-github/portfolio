@@ -7,10 +7,11 @@ class MyDocument extends Document {
       <Html>
         <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect"  href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preconnect"  href="https://fonts.gstatic.com" />
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"/> 
+
         </Head>
-        <body className="bg-gradient-to-r from-greenCustom to-blue-600">
+        <body className="bg-gradient-to-r from-greenCustom to-blue-700 dark:from-blueCustom-backgroundLight dark:to-blueCustom-backgroundDark dark:text-white text-black" >
           <Main />
           <NextScript />
         </body>

@@ -1,59 +1,136 @@
-import {AiFillGithub, AiFillLinkedin,AiFillYoutube} from 'react-icons/ai';
-import {GoLocation} from 'react-icons/go'
-import{GiTie} from 'react-icons/gi'
+import { AiFillGithub, AiFillLinkedin, AiFillYoutube } from "react-icons/ai";
+import {ImLocation2} from 'react-icons/im'
+import { GiTie } from "react-icons/gi";
+import { SiGooglecloud, SiCodechef,SiGmail } from "react-icons/si";
+import {BsTelephoneInboundFill} from 'react-icons/bs'
+import {FcDocument,FcDownload} from 'react-icons/fc'
+import Image from "next/image";
+
+import {useTheme} from 'next-themes'
 
 const Sidebar = () => {
+
+const {theme,setTheme} =useTheme();
+
+const changeTheme=()=>{
+  setTheme(theme==="light"?"dark":"light");
+}
+
   return (
-    <div>
-      <img
-        src="https://media-exp1.licdn.com/dms/image/C5603AQEa6T0CZJrg7g/profile-displayphoto-shrink_200_200/0/1608130453074?e=1641427200&v=beta&t=2UVkhlb43_GonWydM9cJaKHQuS88S8pXUduX4yPsa7Q"
-        alt="profilePicture"
+    <div className="">
+      <div className=" pb-3 transition duration-500 ease-in-out hover:bg-green-100 dark:hover:bg-blueCustom-backgroundDark rounded-3xl transform hover:-translate-y-1 ">
+        <Image
+          src="/images/Portfolio_DP.jpg"
+          alt="profilePicture"
+          className=" mx-auto my-2  rounded-3xl  dark:ring-gray-800 ring-2 ring-gray-300  "
+          height="128"
+          width="128"
+          layout="intrinsic"
+          quality="100"
+          priority
+        />
 
-        className="w-32 h-32 mx-auto rounded-full"
-      />
+        <h3 className="text-3xl font-medium tracking-wider delay-150 duration-3 transition ease-in-outy-4 font-kaushan ">
+          <span className="text-greenCustom dark:text-pinkCustom ">Nikhil </span>
+          <span>Sharma</span>
+                  </h3>
+      </div>
 
-      <h3  className="my-4 text-3xl font-medium tracking-wider font-kaushan">
-        <span className="text-greenCustom">Nikhil </span>
-        Sharma
-      </h3>
-      
-      <p className="px-2 py-1 my-3 bg-gray-200 rounded-full ">Web Developer</p>
-      <a href="" download="name" className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full ">  <GiTie className="w-6 h-6 "/>Download Resume</a>
-      
+      {/* <p className="px-2 py-2 my-3 rounded-full bg-gradient-to-r from-green-200 to-blue-400 font-kaushan ">
+        {" "}
+        Web Developer
+      </p> */}
+      <a
+        href="/assets/NikhilSharma_Resume.pdf"
+        download="NikhilSharma_Resume.pdf"
+        className=" bg-gradient-to-r from-green-200 to-blue-400 flex items-center justify-center px-2 py-2 my-4 transition duration-200 ease-in-out transform bg-gray-200  rounded-full delay-50 hover:-translate-y-1 hover:scale-105
+         dark:from-darkButton-blue dark:to-darkButton-green
+        " 
+      >
+        {" "}
+        <FcDocument className="w-8 h-8 mx-2 animate-bounce-custom " />
+         <span className="">Download Resume</span>
+        <FcDownload className="w-8 h-8 mx-2 animate-bounce-custom" />
+
+      </a>
+
       {/* {social Icons } */}
-<div className="flex justify-around w-9/12 mx-auto my-5 text-greenCustom md:w-full ">
-         <a href="">
-           <AiFillGithub  className="w-8 h-8 cursor-pointer"></AiFillGithub>
-         </a>
-         <a href="">
-           <AiFillYoutube  className="w-8 h-8 cursor-pointer"></AiFillYoutube>
-         </a>
-         <a href="">
-           <AiFillLinkedin  className="w-8 h-8 cursor-pointer"></AiFillLinkedin>
-         </a>
-</div>
+      <div className=" transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex justify-around w-9/12 mx-auto my-5 text-greenCustom  dark:text-pinkCustom md:w-full   ">
+        <a href="https://github.com/nikhilsharma-github" target="_blank">
+          <AiFillGithub className="w-8 h-8 cursor-pointer"></AiFillGithub>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/nikhil-sharma-7b32601b6/"
+          target="_blank"
+        >
+          <AiFillLinkedin className="w-8 h-8 cursor-pointer"></AiFillLinkedin>
+        </a>
+        <a
+          href="https://www.cloudskillsboost.google/public_profiles/694191a0-831e-4356-8411-f08b0c544804"
+          target="_blank"
+        >
+          <SiGooglecloud className="w-8 h-8 cursor-pointer"></SiGooglecloud>
+        </a>
+        <a href="https://www.codechef.com/users/nikhil_cse" target="_blank">
+          <SiCodechef className="w-8 h-8 cursor-pointer"></SiCodechef>
+        </a>
+      </div>
       {/* address  */}
 
-      <div className="py-4 my-5 bg-gray-200 "  style={{ marginLeft:'-1rem', marginRight:'-1rem'}}>
-        <div className="flex items-center justify-center space-x-2 ">
-          <GoLocation />
-          <span className="">Delhi, India</span>
+      <div
+        className=" py-4 my-5 bg-gradient-to-r from-green-200 to-blue-300 
+        dark:from-blueCustom-backgroundDark dark:to-blueCustom-backgroundLight
+        
+        "
+        style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
+      >
+        <div className="flex  items-center justify-center space-x-4 px-2 mx-2">
+          <ImLocation2  className="w-5 h-5"/>
+          <span className="">Ashok Vihar Phase‐3<br/> Delhi‐52, India</span>
         </div>
-        <p className="my-2">nikhilsharma.csgeek@gmail.com</p>
-        <p className="my-2">+91-8929004546</p>
+        <div className="flex  items-center justify-center space-x-4 px-2 mx-2">
+          <SiGmail className="w-5 h-5" />
+          <span className="my-2 flex-wrap">nikhilsharma.csgeek<br/>@gmail.com</span>
+        </div>
+        <div className=" px-2 mx-2 flex  items-center justify-center space-x-4 ">
+          <BsTelephoneInboundFill className="w-5 h-5" />
+          <span className="">+91-8929004546</span>
+        </div>
+        
+        
+        {/* <p className="my-2">+91-8929004546</p> */}
       </div>
 
       {/* email button  */}
-      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full focus:outline-none bg-gradient-to-r from-greenCustom to-blue-600" onClick={()=>window.open('mailto:nikhilsharma.csgeek@gmail.com')}>Email Me</button>
+
+      <button
+        className="w-8/12 font-medium px-5 py-2 my-2 text-white transition duration-300 ease-in-out delay-50 transform rounded-full hover:-translate-y-1 hover:scale-110 focus:outline-none bg-gradient-to-r from-greenCustom to-blue-800
+        dark:from-darkButton-blue dark:to-darkButton-green
+        "
+        onClick={() => window.open("mailto:nikhilsharma.csgeek@gmail.com")}
+      >
+        Email Me
+      </button>
 
       {/* theme button  */}
-      <button className="w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-greenCustom to-blue-800">Light UI</button>
+      <button className=" font-medium w-8/12 px-5 py-2 my-2 text-white
+       
+       transition duration-300 ease-in-out transform 
+       delay-50 hover:-translate-y-1 hover:scale-110 
+       
+       rounded-full 
+      
+      bg-gradient-to-r from-greenCustom to-blue-800
+      dark:from-darkButton-blue dark:to-darkButton-green
+      
+      "  
+      onClick={changeTheme}
+      >
+        
 
-
-
-    
-    
-    
+        Toggle Theme
+        
+      </button>
     </div>
   );
 };
