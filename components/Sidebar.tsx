@@ -56,22 +56,22 @@ const changeTheme=()=>{
 
       {/* {social Icons } */}
       <div className=" transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-110 flex justify-around w-9/12 mx-auto my-5 text-greenCustom  dark:text-pinkCustom md:w-full   ">
-        <a href="https://github.com/nikhilsharma-github" target="_blank">
+        <a href="https://github.com/nikhilsharma-github" target="_blank" aria-label="Github">
           <AiFillGithub className="w-8 h-8 cursor-pointer"></AiFillGithub>
         </a>
         <a
           href="https://www.linkedin.com/in/nikhil-sharma-7b32601b6/"
-          target="_blank"
+          target="_blank" aria-label="LinkedIn"
         >
           <AiFillLinkedin className="w-8 h-8 cursor-pointer"></AiFillLinkedin>
         </a>
         <a
           href="https://www.cloudskillsboost.google/public_profiles/694191a0-831e-4356-8411-f08b0c544804"
-          target="_blank"
+          target="_blank" aria-label="Google Cloud"
         >
           <SiGooglecloud className="w-8 h-8 cursor-pointer"></SiGooglecloud>
         </a>
-        <a href="https://www.codechef.com/users/nikhil_cse" target="_blank">
+        <a href="https://www.codechef.com/users/nikhil_cse" target="_blank" aria-label="Codechef">
           <SiCodechef className="w-8 h-8 cursor-pointer"></SiCodechef>
         </a>
       </div>

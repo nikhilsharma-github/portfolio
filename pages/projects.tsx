@@ -5,7 +5,7 @@ import {useState} from 'react';
 import { Category } from "../type";
 import { motion } from "framer-motion";
 import { fadeInUp, stagger } from "../animations";
-
+import Head from 'next/head'
 
  const Projects = () => {
 
@@ -28,7 +28,9 @@ import { fadeInUp, stagger } from "../animations";
 
     return (
         <div className="px-5 py-2  h-11/12" >
-            
+             <Head>
+        <title>Portfolio - Projects</title>
+      </Head>
                 <ProjectsNavbar handlerFilterCategory={handlerFilterCategory} active={active} ></ProjectsNavbar>
 
 

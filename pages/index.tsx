@@ -1,7 +1,7 @@
 // import { GetServerSidePropsContext, GetStaticPropsContext } from 'next'
 import { services } from "../data";
 import { TiPointOfInterest } from "react-icons/ti";
-
+import Head from 'next/head'
 import ServiceCard from "../components/ServiceCard";
 import { IService } from "../type";
 import { motion } from "framer-motion";
@@ -14,6 +14,9 @@ const About = ({endpoint}) => {
 
   return (
     <div className="flex flex-col px-6 pt-1 flex-grow ">
+      <Head>
+        <title>Portfolio - About</title>
+      </Head>
       <motion.div variants={fadeInUp} initial="initial" animate="animate">
         <h5 className="my-3 font-normal">
           ✅ I am a <b>Computer Science Undergraduate Student</b>, currently

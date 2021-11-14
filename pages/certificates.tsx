@@ -1,9 +1,13 @@
 import { certificates as certval } from "../data";
 import CertificateCard from "../components/CertificateCard";
+import Head from 'next/head'
 
 const certificates = () => {
   return (
     <div className=" overflow-y-scroll h-96 flex flex-col px-6   flex-grow ">
+      <Head>
+        <title>Portfolio - Certificates</title>
+      </Head>
       <div className=" ">
         <div className="grid lg:grid-cols-1 py-4 gap-4 px-2">
           {certval.map((service) => (
