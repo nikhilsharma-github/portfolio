@@ -6,6 +6,8 @@ import { RiComputerLine } from "react-icons/ri";
 import { MdDeveloperMode } from "react-icons/md";
 import { BsCircleFill } from "react-icons/bs";
 import {VscServerProcess} from "react-icons/vsc";
+import im from './public/images/DrumKit.jpg'
+
 
 
 // import { AiOutlineAntDesign, AiOutlineApi } from "react-icons/ai";
@@ -147,7 +149,8 @@ export const projects:IProject[] =[
      id:1,
      name:"Text-Utility",
      description:"A React Based App for Text Manipulation. We Can Modify our Text as we want, like converting the textintoUPPERCASE, lower‐case, camelCase,etc.",
-     image_path:"TextUtility",
+     image_path:"/images/TextUtility.JPG",
+    //  image_path:"./public/images/DrumKit.jpg",
      deployed_url:"https://nikhilsharma-github.github.io/Text-Utility/#/Text-Utility/",
      github_url:"https://github.com/nikhilsharma-github/Text-Utility",
      category:["React"],
@@ -157,9 +160,9 @@ export const projects:IProject[] =[
     {id:2,
       name:"Portfolio Website",
       description:"This Website is Created using Next.js, tailwind and TypeScript and a lot of Efforts in its UI and Responsiveness. ",
-      image_path:"Portfolio",
-      deployed_url:"",
-      github_url:"",
+      image_path:"/images/Portfolio.JPG",
+      deployed_url:"https://portfolio-nikhilsharma-github.vercel.app/",
+      github_url:"https://github.com/nikhilsharma-github/portfolio",
       category:["React"],
       key_techs:["React","Next.js","Tailwind","Typescript"]
  
@@ -167,7 +170,7 @@ export const projects:IProject[] =[
     {id:3,
       name:"Republic News India - RNI",
       description:"A react based app which shows latest news, fetched from newsAPI.org, and presents it in a better way with refreshing UI, mainly used Bootstrap, API and react",
-      image_path:"NewsApp",
+      image_path:"/images/NewsApp.JPG",
       deployed_url:"https://republic-news-india.herokuapp.com/Home",
       github_url:"https://github.com/nikhilsharma-github/NewsAppRNI",
       category:["React"],
@@ -178,7 +181,7 @@ export const projects:IProject[] =[
     id:4,
      name:"The Simon Game",
      description:"A simple HTML, CSS and JS based Console Game in which one must remember the older patterns to reach next levels",
-     image_path:"Simon",
+     image_path:"/images/Simon.JPG",
      deployed_url:"https://nikhilsharma-github.github.io/Simon_Game/",
      github_url:"https://github.com/nikhilsharma-github/Simon_Game",
      category:["Minor"],
@@ -189,7 +192,7 @@ export const projects:IProject[] =[
     id:5,
      name:"Drum Kit",
      description:"A simple HTML, CSS and JS based Music Generating Console Game in which Various Instruments gets played when Clicked",
-     image_path:"DrumKit",
+     image_path:"/images/DrumKit.JPG",
      deployed_url:"https://nikhilsharma-github.github.io/DrumKit/",
      github_url:"https://github.com/nikhilsharma-github/DrumKit",
      category:["Minor"],
@@ -200,7 +203,7 @@ export const projects:IProject[] =[
     id:6,
      name:"TinDog",
      description:"Tinder for Dogs, Simple Website Created using HTML and CSS only.",
-     image_path:"TinDog",
+     image_path:"/images/TinDog.JPG",
      deployed_url:"https://nikhilsharma-github.github.io/TinDog/",
      github_url:"https://github.com/nikhilsharma-github/TinDog",
      category:["Minor"],

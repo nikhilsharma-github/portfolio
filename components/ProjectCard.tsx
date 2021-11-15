@@ -8,7 +8,7 @@ import Image from 'next/image';
 import {motion} from 'framer-motion'
 import { fadeInUp, stagger } from "../animations";
 
-
+import k from '../public/images/Portfolio.jpg';
 let imgval="";
 
 
@@ -86,7 +86,8 @@ const ProjectCard: FunctionComponent<{
         // src={i1}
         // src={`/../public/images/${image_path}.jpg`}
         // src={imgval}
-        src="/images/TextUtility.jpg"
+        // src="/images/TextUtility.jpg"
+        src={image_path}
         
         alt={name}
         className="cursor-pointer  rounded-xl"
@@ -115,14 +116,14 @@ const ProjectCard: FunctionComponent<{
 
         
             <Image
-              // src={image_path}
+              src={image_path}
               // src={require(`${image_path}`)}
               // src={require(image_path)}
               // src={require('images/' + image_path + '.jpg')}
               // src={i1}
               // src={`/../public/images/${image_path}.jpg`}
               // src={imgval}
-              src="/images/TinDog.jpg"
+              // src="/images/TinDog.jpg"
               alt={name}
               className="rounded-xl mx-2 my-2  "
               width="400"
