@@ -7,7 +7,7 @@ import { MdClose } from "react-icons/md";
 import Image from 'next/image';
 import {motion} from 'framer-motion'
 import { fadeInUp, stagger } from "../animations";
-import i1 from '../public/images/TinDog.jpg';
+
 
 let imgval="";
 
@@ -32,26 +32,26 @@ const ProjectCard: FunctionComponent<{
 }) => {
   {
     if(id===1){
-      imgval="/../public/images/TextUtility.jpg"
+      imgval="/images/TextUtility.jpg"
     }
     else if(id===2){
-      imgval="/../public/images/Portfolio.jpg"
+      imgval="/images/Portfolio.jpg"
       
     }
     else if(id===3){
-      imgval="/../public/images/NewsApp.jpg"
+      imgval="/images/NewsApp.jpg"
       
     }
     else if(id===4){
-      imgval="/../public/images/Simon.jpg"
+      imgval="/images/Simon.jpg"
       
     }
     else if(id===5){
-      imgval="/../public/images/TinDog.jpg"
+      imgval="/images/TinDog.jpg"
       
     }
     else if(id===6){
-      imgval="/../public/images/DrumKit.jpg"
+      imgval="/images/DrumKit.jpg"
       
     }
   }
