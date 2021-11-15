@@ -85,7 +85,8 @@ const ProjectCard: FunctionComponent<{
         // src="/images/Portfolio_DP.jpg"
         // src={i1}
         // src={`/../public/images/${image_path}.jpg`}
-        src={imgval}
+        // src={imgval}
+        src="/images/TextUtility.jpg"
         
         alt={name}
         className="cursor-pointer  rounded-xl"
@@ -120,7 +121,8 @@ const ProjectCard: FunctionComponent<{
               // src={require('images/' + image_path + '.jpg')}
               // src={i1}
               // src={`/../public/images/${image_path}.jpg`}
-              src={imgval}
+              // src={imgval}
+              src="/images/TinDog.jpg"
               alt={name}
               className="rounded-xl mx-2 my-2  "
               width="400"
