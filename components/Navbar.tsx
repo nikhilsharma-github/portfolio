@@ -46,11 +46,11 @@ export const Navbar = () => {
     ">
        
 
-      <span className="font-bold text-greenCustom dark:text-pinkCustom lg:text-xl text-sm  border-b-4 border-greenCustom   dark:border-greenCustom
+      <span className="font-bold text-greenCustom dark:text-pinkCustom lg:text-xl text-sm md:text-base  border-b-4 border-greenCustom   dark:border-greenCustom
        transition duration-300 ease-in-out transform  delay-50 hover:-translate-y-1 hover:scale-100 hover:bg-green-100 dark:hover:bg-blueCustom-backgroundLight px-2 rounded-md 
        animate-bounce-custom ">{activeItem}</span>
 
-      <div className="text-blue-700 dark:text-blue-400 animate-bounce-custom  lg:text-lg text-xs flex lg:space-x-2 space-x-0">
+      <div className="text-blue-700 dark:text-blue-400 animate-bounce-custom  lg:text-lg md:text-base text-xs flex lg:space-x-2 space-x-0">
 {/*         
         {activeItem !== "About" && (
           <Link href="/">

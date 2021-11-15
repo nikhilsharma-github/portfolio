@@ -6,10 +6,10 @@ export const NavItem:FunctionComponent<{value:Category |'All', handlerFilterCate
   active:string
 }> = ({value,handlerFilterCategory,active}) => {
 
-        let className ="cursor-pointer hover:text-blue-700 capitalize dark:hover:text-blue-400";
+        let className ="cursor-pointer hover:text-blue-700 capitalize dark:hover:text-blue-400  sm:text-lg text-light";
         
         if(active===value){
-             className=className+" text-greenCustom dark:text-pinkCustom text-lg  underline "
+             className=className+" text-greenCustom dark:text-pinkCustom sm:text-lg text-normal underline "
         }
     return (
         <ul>
@@ -25,7 +25,7 @@ export const NavItem:FunctionComponent<{value:Category |'All', handlerFilterCate
 
 const ProjectsNavbar:FunctionComponent<{handlerFilterCategory:Function,active:string}> = (props) => {
     return (
-        <div className="flex space-x-3 px-3 py-2 list-none overflow-x-auto"> 
+        <div className="flex sm:space-x-3 space-x-1 px-3  py-2 list-none overflow-x-auto"> 
                 <NavItem value="All"  {...props}/>
                 <NavItem value="React"  {...props}/>
                 <NavItem value="Node"  {...props}/>

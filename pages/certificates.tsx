@@ -11,7 +11,7 @@ const certificates = () => {
       <div className=" ">
         <div className="grid lg:grid-cols-1 py-4 gap-4 px-2">
           {certval.map((service) => (
-            <div className="  bg-gradient-to-r from-green-200 to-blue-300 dark:from-blueCustom-backgroundDark dark:to-blueCustom-backgroundLight  rounded-lg lg:col-span-1 ">
+            <div className="  bg-gradient-to-r from-green-200 to-blue-300 dark:from-blueCustom-backgroundDark dark:to-blueCustom-backgroundLight  rounded-lg lg:col-span-1 px-1 ">
               <CertificateCard certificate={service}> </CertificateCard>
             </div>
           ))}

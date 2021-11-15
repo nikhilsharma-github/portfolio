@@ -54,7 +54,7 @@ const About = ({endpoint}) => {
               variants={fadeInUp}
               initial="initial"
               animate="animate"
-              className=" bg-yellow-50 dark:bg-gray-900 rounded-lg lg:col-span-1 "
+              className=" bg-white dark:bg-gray-900 rounded-lg lg:col-span-1 "
             >
               <ServiceCard service={service}> </ServiceCard>
             </motion.div>
