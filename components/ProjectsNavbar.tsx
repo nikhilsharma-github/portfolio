@@ -12,11 +12,14 @@ export const NavItem:FunctionComponent<{value:Category |'All', handlerFilterCate
              className=className+" text-greenCustom dark:text-pinkCustom text-lg  underline "
         }
     return (
+        <ul>
+
         <li  className={className}
           onClick={()=>handlerFilterCategory(value)}
-        >
+          >
             {value}
         </li>
+            </ul>
     )
 }
 

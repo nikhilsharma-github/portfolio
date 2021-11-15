@@ -2,6 +2,6 @@ module.exports = {
   reactStrictMode: true,
    
   images:{
-    domains:["nikhilsharma.netlify.app"],
+    // domains:["nikhilsharma.netlify.app"],
   },
 }

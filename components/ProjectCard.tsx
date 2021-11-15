@@ -7,6 +7,10 @@ import { MdClose } from "react-icons/md";
 import Image from 'next/image';
 import {motion} from 'framer-motion'
 import { fadeInUp, stagger } from "../animations";
+import i1 from '../public/images/TinDog.jpg';
+
+let imgval="";
+
 
 const ProjectCard: FunctionComponent<{
   project: IProject;
@@ -26,6 +30,31 @@ const ProjectCard: FunctionComponent<{
   showDetail,
   setShowDetail,
 }) => {
+  {
+    if(id===1){
+      imgval="/../public/images/TextUtility.jpg"
+    }
+    else if(id===2){
+      imgval="/../public/images/Portfolio.jpg"
+      
+    }
+    else if(id===3){
+      imgval="/../public/images/NewsApp.jpg"
+      
+    }
+    else if(id===4){
+      imgval="/../public/images/Simon.jpg"
+      
+    }
+    else if(id===5){
+      imgval="/../public/images/TinDog.jpg"
+      
+    }
+    else if(id===6){
+      imgval="/../public/images/DrumKit.jpg"
+      
+    }
+  }
   // const [showDetail, setshowDetail] = useState(false);
 
   let buttonClassGithubProjectCard="flex items-center px-2 py-2 space-x-2 text-lg text-white bg-gradient-to-r from-greenCustom to-blue-800 dark:from-darkButton-blue  dark:to-darkButton-green rounded-xl ";
@@ -43,18 +72,29 @@ const ProjectCard: FunctionComponent<{
     buttonClassProjectProjectCard+=buttonDisableClass;
     textDisabledClass+=buttonDisableClass;
   }
+  console.log(image_path);
+  
 
   return (
     <div>
+        
       <Image
-        src={image_path}
+        // src={require(image_path)}
+        // src={require(`${image_path}`)}
+        // src={require('images/' + image_path + '.jpg')}
+        // src="/images/Portfolio_DP.jpg"
+        // src={i1}
+        // src={`/../public/images/${image_path}.jpg`}
+        src={imgval}
+        
         alt={name}
         className="cursor-pointer  rounded-xl"
         onClick={() => setShowDetail(id)}
         width="300"
         height="150"
         layout="responsive"
-      ></Image>
+        priority
+        />
       {/* <img
         src={image_path}
         alt={name}
@@ -65,27 +105,35 @@ const ProjectCard: FunctionComponent<{
 
       {showDetail===id && (
         <div
-          className=" shadow-custom-light absolute top-0 left-0 z-10  w-full gap-x-2 grid md:grid-cols-2 text-black bg-gray-100 p-2 dark:bg-blueCustom-backgroundDark dark:text-white
-             bg-gradient-to-r from-green-200 to-blue-300 dark:from-blueCustom-backgroundDark dark:to-blueCustom-backgroundLight rounded-3xl
-            "
+        className=" shadow-custom-light absolute top-0 left-0 z-10  w-full gap-x-2 grid md:grid-cols-2 text-black bg-gray-100 p-2 dark:bg-blueCustom-backgroundDark dark:text-white
+        bg-gradient-to-r from-green-200 to-blue-300 dark:from-blueCustom-backgroundDark dark:to-blueCustom-backgroundLight rounded-3xl
+        "
         >
           <motion.div     initial="initial" animate="animate" variants={fadeInUp}>
             <motion.div >
 
+        
             <Image
-              src={image_path}
+              // src={image_path}
+              // src={require(`${image_path}`)}
+              // src={require(image_path)}
+              // src={require('images/' + image_path + '.jpg')}
+              // src={i1}
+              // src={`/../public/images/${image_path}.jpg`}
+              src={imgval}
               alt={name}
               className="rounded-xl mx-2 my-2  "
               width="400"
               height="250"
               layout="responsive"
               priority
-           
+              
               />
               </motion.div>
             {/* <img
               src={image_path}
               alt={name}
+              src={require('/images/' + image_path + '.jpg')};
               className="rounded-2xl  h-3/4 mx-2 my-2 shadow-custom-light w-10/12"
             /> */}
             <motion.div className="flex justify-center my-6 space-x-2"  initial="initial" animate="animate" variants={fadeInUp} >
