@@ -41,8 +41,8 @@ const changeTheme=()=>{
         Web Developer
       </p> */}
       <a
-        href="/assets/NikhilSharma_Resume.pdf"
-        download="NikhilSharma_Resume.pdf"
+        href="/assets/NikhilSharmaResume_17-11-2021.pdf"
+        download="NikhilSharmaResume_17-11-2021.pdf"
         className=" bg-gradient-to-r from-green-200 to-blue-400 flex items-center justify-center px-2 py-2 my-4 transition duration-200 ease-in-out transform bg-gray-200  rounded-full delay-50 hover:-translate-y-1 hover:scale-105
          dark:from-darkButton-blue dark:to-darkButton-green
         " 
