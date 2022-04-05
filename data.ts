@@ -1,5 +1,6 @@
 // // It will contain all the services which I provide, this data will be shown on about page.
 
+
 import { IProject, IService, ISkill,ICertificates } from "./type";
 import { SiGooglecloud,SiUdemy,SiCoursera,SiCodeforces } from "react-icons/si";
 import { RiComputerLine } from "react-icons/ri";
@@ -46,12 +47,12 @@ export const services: IService[] = [
     about:
       "I love to build beautiful and scalable SPA using <b> HTML</b>,<b>CSS</b> and Fronted Frameworks Like <b>React.js</b> ",
   },
-  {
-    Icon: VscServerProcess,
-    title: "Backend Development",
-    about:
-      "For coding the server side internal Logic for an Application, I usually use <b>Node.js</b> and <b>Express</b> alongwith <b>MongoDB</b> for Database.",
-  },
+  // {
+    // Icon: VscServerProcess,
+    // title: "Backend Development",
+    // about:
+      // "For coding the server side internal Logic for an Application, I usually use <b>Node.js</b> and <b>Express</b> alongwith <b>MongoDB</b> for Database.",
+  // },
 
   {
     // Icon: MdDeveloperMode,
@@ -120,7 +121,7 @@ export const languages: ISkill[] = [
   },
   {
     name: "Node.js",
-    level: "60%",
+    level: "40%",
     Icon: BsCircleFill,
   },
   {

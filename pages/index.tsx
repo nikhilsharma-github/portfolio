@@ -25,9 +25,8 @@ const About = ({endpoint}) => {
           New Delhi <b>(USICT_GGSIPU)</b>.<br />✅ Currently I am in{" "}
           <b>3rd Year</b> and Doing <b>Competitive Programming and DSA</b>,
           alongwith Web Development in MERN stack.
-          <br />✅ I love to create unique and creative Fronted and Full Stack
-          Websites using current Popular and Trending Technologies, like{" "}
-          <b>MERN stack</b>.
+          <br />✅ I love to create unique and creative Frontend websites using React and I will love to increase my skillset by trying {" "}
+          <b>MERN stack</b>, as well.
           <br />✅ I also have interest in Cloud Computing Technology like{" "}
           <b>Google Cloud Platform</b>.
         </h5>

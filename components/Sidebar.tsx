@@ -20,7 +20,8 @@ const changeTheme=()=>{
     <div className="">
       <div className=" pb-3 transition duration-500 ease-in-out hover:bg-green-100 dark:hover:bg-blueCustom-backgroundDark rounded-3xl transform hover:-translate-y-1 ">
         <Image
-          src="/images/Portfolio_DP.jpg"
+          // src="/images/Portfolio_DP.jpg"
+          src="/images/DP4.jpg"
           alt="profilePicture"
           className=" mx-auto my-2  rounded-3xl  dark:ring-gray-800 ring-2 ring-gray-300  "
           height="128"
@@ -126,7 +127,6 @@ const changeTheme=()=>{
       "  
       onClick={changeTheme}
       >
-        
 
         Toggle Theme
         
