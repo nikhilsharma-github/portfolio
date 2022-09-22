@@ -23,7 +23,7 @@ const resume = () => {
              B.Tech in Computer Science Engineering.
             </h5>
             <p className="font-semibold">University School of Information and Communication Technology, GGSIPU, New Delhi.</p>
-            <p className="my-3 text-justify">(USICT_GGSIPU) | Batch 2019 - 2023 | Currently in 3rd year | CGPA: 8.8 till now</p>
+            <p className="my-3 text-justify">(USICT_GGSIPU) | Batch 2019 - 2023 | Currently in Final year | CGPA: 8.8 till now</p>
           </div>
           <div>
             <h5 className="my-2 text-xl font-bold dark:text-blue-400">
