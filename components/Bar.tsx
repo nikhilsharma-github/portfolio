@@ -25,7 +25,7 @@ const Bar:FunctionComponent<{data:ISkill}> = ({data:{Icon,level,name}}) => {
 
     return (
         <div className="my-2  bg-gray-100 dark:bg-gray-800 rounded-full">
-            <motion.div className="px-4 py-1 flex items-center rounded-full bg-gradient-to-r from-green-300 to-blue-500 h-7 
+            <motion.div className="px-4 py-1 flex items-center rounded-full bg-gradient-to-r from-green-300 to-blue-500 h-10
             
             dark:from-darkButton-blue dark:to-darkButton-green
             

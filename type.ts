@@ -38,5 +38,5 @@ export interface ICertificates{
 
 }
 
-export type Category="All" |"React" | "Node" | "Express" | "Minor" ;
+export type Category="All" | "MERN" | "React" | "ML" | "Basic" ;
 

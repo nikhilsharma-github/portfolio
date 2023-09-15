@@ -23,7 +23,7 @@ const resume = () => {
              B.Tech in Computer Science Engineering.
             </h5>
             <p className="font-semibold">University School of Information and Communication Technology, GGSIPU, New Delhi.</p>
-            <p className="my-3 text-justify">(USICT_GGSIPU) | Batch 2019 - 2023 | Currently in Final year | CGPA: 8.8 till now</p>
+            <p className="my-3 text-justify">(USICT_GGSIPU) | Batch 2019 - 2023 | Graduated in June 2023 | Final CGPA: 8.8/10.0 </p>
           </div>
           <div>
             <h5 className="my-2 text-xl font-bold dark:text-blue-400">
@@ -42,7 +42,9 @@ const resume = () => {
               <h5 className="my-3 text-2xl font-bold text-blue-900 dark:text-pinkCustom ">
                   Languages and Frameworks
                       </h5>
-                  <div className="my-2">
+                  <div className="my-2  
+                   md:text-base text-xs lg:space-x-2 space-x-0
+                  ">
 
                       {
                           languages.map((language=><Bar data={language} key={language.name}/>)

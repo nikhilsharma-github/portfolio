@@ -27,10 +27,10 @@ const ProjectsNavbar:FunctionComponent<{handlerFilterCategory:Function,active:st
     return (
         <div className="flex sm:space-x-3 space-x-1 px-3  py-2 list-none overflow-x-auto"> 
                 <NavItem value="All"  {...props}/>
+                <NavItem value="MERN"  {...props}/>
                 <NavItem value="React"  {...props}/>
-                <NavItem value="Node"  {...props}/>
-                <NavItem value="Express"  {...props}/>
-                <NavItem value="Minor"  {...props}/>
+                <NavItem value="ML"  {...props}/>
+                <NavItem value="Basic"  {...props}/>
                 
         </div>
     )

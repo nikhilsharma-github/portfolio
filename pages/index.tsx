@@ -19,16 +19,12 @@ const About = ({endpoint}) => {
       </Head>
       <motion.div variants={fadeInUp} initial="initial" animate="animate">
         <h5 className="my-3 font-normal">
-          ✅ I am a <b>Computer Science Undergraduate Student</b>, currently
-          pursuing my <b>4 year B.Tech Degree</b> from University School of
-          Information and Communication Technology, GGSIPU, Dwarka, located in
-          New Delhi <b>(USICT_GGSIPU)</b>.<br />✅ Currently I am in{" "}
-          <b>Final Year</b> and Doing <b>Competitive Programming and DSA</b>,
-          alongwith Web Development in MERN stack.
-          <br />✅ I love to create unique and creative Frontend websites using React and I will love to increase my skillset by trying {" "}
-          <b>MERN stack</b>, as well.
-          <br />✅ I also have interest in Cloud Computing Technology like{" "}
-          <b>Google Cloud Platform</b>.
+          ✅ I have completed my <b>B.Tech in CSE</b> from University School of Information and Communication Technology, GGSIPU, Dwarka, located in
+          New Delhi <b>(USICT_GGSIPU_2019_2023)</b>.
+          <br />✅ Currently I am open to work and looking for {" "}
+          <b>Full Time or Intern Based Software Engineering based roles PAN India</b> associated with technologies like <b>Web Development, Machine Learning, and more.</b>
+          <br />✅ I am highly interested in developing MERN Stack based Web Applications and learning ML Concepts, alongwith system administration and Cloud technologies as well.
+          <br />✅ Also I am practicing DSA problems consistently on Leetcode and GFG, alonwith strengthening my CS fundamentals in OOPS, DBMS, OS and more.
         </h5>
       </motion.div>
       <div
