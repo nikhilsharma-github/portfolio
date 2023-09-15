@@ -31,9 +31,9 @@ const ProjectCard: FunctionComponent<{
 }) => {
   {
     if (id === 1) {
-      imgval = "/images/UDF.jpg";
+      imgval = "/images/UDF.jpeg";
     } else if (id === 2) {
-      imgval = "/images/LPS.jpg";
+      imgval = "/images/LPS.png";
     } else if (id === 3) {
       imgval = "/images/Pairsonality.jpg";
     } else if (id === 4) {

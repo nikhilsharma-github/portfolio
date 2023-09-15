@@ -149,7 +149,7 @@ export const projects: IProject[] = [
     name: "UDF-USICT Discuss Forum",
     description:
       "Developed a Community Platform named UDF-USICT Discuss Forum using MERN Stack, Students can create posts according to their interests like Academics, Coding, Exams, General Discussion, Placements,etc.",
-    image_path: "/images/UDF.JPG",
+    image_path: "/images/UDF.jpeg",
     deployed_url: "",
     github_url:
       "https://github.com/nikhilsharma-github/UDF_USICT-Discuss-Forum",
@@ -194,7 +194,7 @@ export const projects: IProject[] = [
     name: "Portfolio Website",
     description:
       "This Website is Created using Next.js, tailwind and TypeScript and a lot of Efforts in its UI and Responsiveness. ",
-    image_path: "/images/Portfolio.jpg",
+    image_path: "/images/Portfolio.jpeg",
     deployed_url: "https://portfolio-nikhilsharma-github.vercel.app/",
     github_url: "https://github.com/nikhilsharma-github/portfolio",
     category: ["React"],
